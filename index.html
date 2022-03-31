@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC 273: Volkanovski vs The Korean Zombie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content">
+            <div class="container">
+                <h1>UFC 273</h1>
+                <img src="img/volkanovski.png" alt="Volkanovski">
+                <img src="img/zombie.png" alt="The Korean Zombie">
+                <h2>Jegyvásárlás</h2>
+                <p>Jegy típusa:</p>
+                <div class="radioGroupBelow">
+                    <label for="felnott">Felnőtt
+                        <input type="radio" name="tipus" id="felnott" checked>
+                    </label>
+                    <label for="idos">Idős
+                        <input type="radio" name="tipus" id="idos">
+                    </label>
+                </div>
+
+                <label for="mennyiseg" id="ticketLabel">Jegyek száma:
+                    <br>
+                    <input type="number" id="mennyiseg" value="1" min="1">
+                </label>
+                <br>
+
+                <button id="vasarlasGomb">Kalkulál</button>
+
+                <p id="fizetendo"></p>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
